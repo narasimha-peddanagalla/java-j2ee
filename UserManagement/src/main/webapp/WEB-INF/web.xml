@@ -1,0 +1,89 @@
+<web-app 
+  xmlns="https://jakarta.ee/xml/ns/jakartaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+  version="6.0"
+  id="WebApp_ID">
+
+
+<!-- Add UserServlet Mapping -->
+
+<servlet>
+	<servlet-name>AddUserServlet</servlet-name>
+	<servlet-class>com.userapp.controller.AddUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+
+	<servlet-name>AddUserServlet</servlet-name>
+	<url-pattern>/addUser</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>RegisterServlet</servlet-name>
+	<servlet-class>com.userapp.controller.RegisterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+
+	<servlet-name>RegisterServlet</servlet-name>
+	<url-pattern>/register</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>com.userapp.controller.LoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/login</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>UpdateUserServlet</servlet-name>
+	<servlet-class>com.userapp.controller.UpdateUserServlet</servlet-class>
+
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>UpdateUserServlet</servlet-name>
+	<url-pattern>/updateUser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>EditUserServlet</servlet-name>
+    <servlet-class>com.userapp.controller.EditUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>EditUserServlet</servlet-name>
+    <url-pattern>/editUser</url-pattern>
+
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <servlet-class>com.userapp.controller.DeleteUserServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DeleteUserServlet</servlet-name>
+    <url-pattern>/deleteUser</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>ViewUsersServlet</servlet-name>
+    <servlet-class>com.userapp.controller.ViewUsersServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>ViewUsersServlet</servlet-name>
+    <url-pattern>/viewUsers</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
